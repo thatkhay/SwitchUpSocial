@@ -1,2 +1,2 @@
 # SwitchUpSocial
-a theme switcher app  
+## A theme switcher app  
