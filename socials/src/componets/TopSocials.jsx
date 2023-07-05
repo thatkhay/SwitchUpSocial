@@ -68,7 +68,7 @@ function TopSocials() {
                 <ThemeSwitch />
             </div>
             </header>
-            <main style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr' }}>
+            <main style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem' }}>
 { data.map((items, index) => (
     <Card key={index} style={{ padding: '0'}}>
     <CardContent style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
