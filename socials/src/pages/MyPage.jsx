@@ -4,7 +4,7 @@ import ButtomSocial from '../componets/ButtomSocial'
 
 function MyPage() {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '1rem 10rem' }}>
         <TopSocials />
         <ButtomSocial />
     </div>
