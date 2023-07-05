@@ -3,44 +3,48 @@ import ThemeSwitch from './ThemeSwitch'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import facebook from '../images/icon-facebook.svg'
+import twitter from '../images/icon-twitter.svg'
+import instagram from '../images/icon-instagram.svg'
+import youtube from '../images/icon-youtube.svg'
 
 import upIcon from '../images/icon-up.svg'
+import downIcon from '../images/icon-down.svg'
 const data = [
     {
      topDivBgcolor: 'hsl(208, 92%, 53%)',
-     socialIcon: {facebook},
-     handle: '@nathanf 1987 ',
+     socialIcon: facebook,
+     handle: '@nathanf',
      number: '1987',
      followersTile: 'followers',
-     arrowicon: {upIcon},
+     arrowicon: upIcon,
      days: '12 today'
     },
     {
      topDivBgcolor: 'hsl(208, 92%, 53%)',
-     socialIcon: {facebook},
-     handle: '@nathanf 1987 ',
-     number: '288',
+     socialIcon: twitter,
+     handle: '@nathanf',
+     number: '1044',
      followersTile: 'followers',
-     arrowicon: {upIcon},
-     days: '12 today'
+     arrowicon: upIcon,
+     days: '99 today'
     },
     {
      topDivBgcolor: 'hsl(208, 92%, 53%)',
-     socialIcon: {facebook},
-     handle: '@nathanf 1987 ',
-     number: '1987',
+     socialIcon: instagram,
+     handle: '@realnathanf',
+     number: '11k',
      followersTile: 'followers',
-     arrowicon: {upIcon},
-     days: '12 today'
+     arrowicon: upIcon,
+     days: '1099 today'
     },
     {
      topDivBgcolor: 'hsl(208, 92%, 53%)',
-     socialIcon: {facebook},
-     handle: '@nathanf 1987 ',
-     number: '1987',
-     followersTile: 'followers',
-     arrowicon: {upIcon},
-     days: '12 today'
+     socialIcon: youtube,
+     handle: 'nathan f .',
+     number: '8239',
+     followersTile: 'suscribers',
+     arrowicon: downIcon,
+     days: '144 today'
     }
 ]
 
