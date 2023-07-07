@@ -68,21 +68,21 @@ function TopSocials() {
                 <ThemeSwitch />
             </div>
             </header>
-            <main style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem' }}>
+            <main style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '1.5rem' }}>
 { data.map((items, index) => (
     <Card key={index} style={{ padding: '0'}}>
     <CardContent style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
         <div style={{ height: '4px',  background: topBorderColor[index % topBorderColor.length], width: '100%', marginTop: '-1rem'}}></div>
     <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src={items.socialIcon} alt="" />
-        <p>{items.handle}</p>
+        <img src={items.socialIcon} alt="" style={{ marginRight:'.5rem' }}/>
+        <p style={{ fontSize: '0.9rem', fontWeight: '700' }}>{items.handle}</p>
     </div>
-   <h3>{items.number}</h3>
-   <p>{items.followersTile}</p>
+   <h3 style={{ fontSize: '3rem', fontWeight: '700' , marginTop: '1rem'}}>{items.number}</h3>
+   <p style={{ letterSpacing: '1px', textTransform: 'uppercase', marginTop: '-3rem',fontSize: '0.9rem' }}>{items.followersTile}</p>
 
    <div style={{ display: 'flex', alignItems: 'center' }}>
     <img src={items.arrowicon} alt="" />
-    <p>{items.days}</p>
+    <p style={{ fontSize: '0.7rem', textTransform: 'capitalize', marginLeft: '0.2rem' }}>{items.days}</p>
    </div>
     </CardContent>
 </Card>

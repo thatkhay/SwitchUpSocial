@@ -70,26 +70,26 @@ const todayData = [
 
 function ButtomSocial() {
   return (
-    <div>
-      <div style={{ display: 'flex' , alignItems: 'center'}}>
+    <div style={{ marginTop: '5rem'}}>
+      <div style={{ display: 'flex' , alignItems: 'center', textTransform: 'capitalize'}}>
         <h4>overview</h4>
         <span>-</span>
         <h4>today</h4>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' , gap: '0.6rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' , gap: '1.5rem' }}>
             {todayData.map((items, index) => (
-              <Card key={index} style={{ }}>
+              <Card key={index} style={{  height: '80%' }}>
                 <CardContent>
                <div style={{ display: 'flex', alignItems: 'center' , justifyContent: 'space-between'}}>
-                <h6>{items.title}</h6>
-                <img src={items.icon} alt="" />
+                <h6 style={{ textTransform: 'capitalize', fontWeight: '700' }}>{items.title}</h6>
+                <img src={items.icon} alt="" style={{ height: '1rem' }} />
                </div>
                <div style={{ display: 'flex', alignItems: 'center' , justifyContent: 'space-between' }}>
-                <h4>{items.number}</h4>
+                <h4 style={{ fontSize: '1.2rem' }}>{items.number}</h4>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                 <img src={items.arrowIcon} alt="" />
-                <span>{items.percentage}</span>
+                <span style={{ marginLeft: '0.2rem', fontSize: '0.7rem', textTransform: 'capitalize'}}>{items.percentage}</span>
                 </div>
                </div>
                 </CardContent>
