@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+#light {
+  background-color:  hsl(0, 0%, 100%);
+}
+#dark {
+background-color: hsl(230, 17%, 14%);
+}
+
+#light .card{
+  background-color: hsl(227, 47%, 96%);
+}
+#dark .card{
+  background-color: hsl(228, 28%, 20%);
+}
+#light .num{
+  color: hsl(228, 28%, 20%);
+}
+#dark .num{
+  color: hsl(0, 0%, 100%);
+}
+#light .text{
+  color: hsl(228, 12%, 44%);
+}
+#dark .text{
+  color: hsl(228, 34%, 66%);
+}
+#light .headText{
+  color: black;
+}
+#dark .headText{
+  color: white;
+}
+

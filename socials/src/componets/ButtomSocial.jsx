@@ -5,6 +5,7 @@ import facebook from '../images/icon-facebook.svg'
 import twitter from '../images/icon-twitter.svg'
 import instagram from '../images/icon-instagram.svg'
 import youtube from '../images/icon-youtube.svg'
+import '../App.css'
 
 import upIcon from '../images/icon-up.svg'
 import downIcon from '../images/icon-down.svg'
@@ -71,7 +72,7 @@ const todayData = [
 function ButtomSocial() {
   return (
     <div style={{ marginTop: '5rem'}}>
-      <div style={{ display: 'flex' , alignItems: 'center', textTransform: 'capitalize'}}>
+      <div  className='headText' style={{ display: 'flex' , alignItems: 'center', textTransform: 'capitalize'}}>
         <h4>overview</h4>
         <span>-</span>
         <h4>today</h4>
@@ -79,17 +80,17 @@ function ButtomSocial() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' , gap: '1.5rem' }}>
             {todayData.map((items, index) => (
-              <Card key={index} style={{  height: '80%' }}>
+              <Card className='card' key={index} style={{  height: '80%' }}>
                 <CardContent>
                <div style={{ display: 'flex', alignItems: 'center' , justifyContent: 'space-between'}}>
-                <h6 style={{ textTransform: 'capitalize', fontWeight: '700' }}>{items.title}</h6>
+                <h6 className='text' style={{ textTransform: 'capitalize', fontWeight: '700' }}>{items.title}</h6>
                 <img src={items.icon} alt="" style={{ height: '1rem' }} />
                </div>
                <div style={{ display: 'flex', alignItems: 'center' , justifyContent: 'space-between' }}>
-                <h4 style={{ fontSize: '1.2rem' }}>{items.number}</h4>
+                <h4 className='num' style={{ fontSize: '1.2rem' }}>{items.number}</h4>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                 <img src={items.arrowIcon} alt="" />
-                <span style={{ marginLeft: '0.2rem', fontSize: '0.7rem', textTransform: 'capitalize'}}>{items.percentage}</span>
+                <span className='text' style={{ marginLeft: '0.2rem', fontSize: '0.7rem', textTransform: 'capitalize'}}>{items.percentage}</span>
                 </div>
                </div>
                 </CardContent>
