@@ -78,7 +78,7 @@ function TopSocials() {
             </div>
 
             <div style={{display: 'flex', alignItems: 'center'}}>
-                <label className='text' htmlFor="switch" style={{marginRight:' 1rem'}}>{theme === 'light' ? 'light mode' : 'dark mode'}</label>
+                <label className='text' htmlFor="switch" style={{marginRight:' 1rem', textTransform: 'capitalize', fontSize: '.7rem', fontWeight: '400'}}>{theme === 'light' ? 'light mode' : 'dark mode'}</label>
              <ReactSwitch onChange={handleToggle} checked={checked}  />
             </div>
             </header>

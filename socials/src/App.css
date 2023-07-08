@@ -50,6 +50,15 @@ background-color: hsl(230, 17%, 14%);
 #dark .card{
   background-color: hsl(228, 28%, 20%);
 }
+#light .card:active{
+  background-color: hsl(240, 3%, 79%);
+}
+#dark .card:active{
+  background-color: hsl(230, 25%, 33%);
+}
+
+
+
 #light .num{
   color: hsl(228, 28%, 20%);
 }
@@ -67,5 +76,11 @@ background-color: hsl(230, 17%, 14%);
 }
 #dark .headText{
   color: white;
+}
+#light .footer{
+  color: hsl(228, 12%, 44%);
+}
+#dark .footer{
+  color: hsl(228, 34%, 66%);
 }
 
